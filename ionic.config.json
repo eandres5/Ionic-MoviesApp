@@ -1,0 +1,7 @@
+{
+  "name": "pelicula",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

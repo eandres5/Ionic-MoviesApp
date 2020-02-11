@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="assets/img/dead.png" height="450">
+  </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    
+ 
+  </ion-list>
+  <ion-row class="top-20">
+    <ion-col>
+      <ion-button size="large" expand="full" (click)="onLogin()">Ingresar</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button size="large" expand="full" routerLink="/register">Registrate</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

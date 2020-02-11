@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="assets/img/peli.png">
+    <ion-card-content>
+      <h4>Registrate en nuestra aplicación y encuentra todas las películas que estas buscando, descubre nuevas
+        películas, estrenos, series, episodios.
+      </h4>
+      <h4>Forma parte de la mejor aplicación de películas</h4>
+      <h2>UNETE YA!!!!</h2>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label position="floating">Contraseña (Tamaño minimo 8)</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+  
+  <ion-row class="top-20">
+    <ion-col>
+      <ion-button size="large" expand="full" (click)="onRegister()">Registrar</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button size="large" expand="full" href="/login">Iniciar Sesión</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
